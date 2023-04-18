@@ -4,7 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>LOSANGELES</title>
   </head>
-  <body></body>
+  <body onload="onPageLoaded()">
+    <!-- BEGIN section Landing -->
+    <section class="section-landing">
+      <div class="page-container">
+        <div class="header-page">
+          <img src="./assets/images/logo.png" alt="" />
+          <div class="header-page-navigation">
+            <a href="#history">01. History</a>
+            <a href="#team">02. Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section Landing -->
+
+    <!-- BEGIN section History -->
+    <section class="section-history" id="history">
+      <div class="page-container">
+        <div class="header-history">
+          <div class="header-history-logo">
+            <img src="./assets/images/logo.png" alt="" />
+            <p><span>LOSANGELES</span><br />MOUNTAINS</p>
+          </div>
+          <div class="header-history-navigation">
+            <a href="#history">01. History</a>
+            <a href="#team">02. Team</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-history">
+        <div class="page-container">
+          <p class="section-title">
+            01.<span>History</span>
+            </p>
+            <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+          </div>
+          <div class="history-slider-wrapper">
+            <div class="page-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./assets/images/slider1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                         <img src="./assets/images/slider2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                         <img src="./assets/images/slider1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                         <img src="./assets/images/slider2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                         <img src="./assets/images/slider1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                         <img src="./assets/images/slider2.png" alt="">
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section History -->
+
+    <!-- BEGIN section Climb -->
+    <section class="section-climb" id="team">
+      <div class="header-climb">
+        <div class="page-container">
+            <p class="section-title">
+              02.<span>Climb</span>
+              </p>
+              <p class="climb-header-text">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+            </div>
+      </div>
+      <div class="content-climb">
+   
+            <div class="tabPanel-widget">
+                <label for="tab-1" tabindex="0" onclick="onTabChange(1)"></label>
+                <input id="tab-1" type="radio" name="tabs" checked="true" aria-hidden="true">
+                <h2><span>Mountain1</span></h2>
+                <div class="tab-1">
+                    <div class="tab-content-card">
+                        <h1>Schedule</h1>
+                        <p>
+                            <span>17 Nov 2016</span>
+                            <span>Vestibulum viverra</span>
+                        </p>
+                        <p>
+                            <span>17 Nov 2016</span>
+                            <span>Vestibulum viverra</span>
+                        </p>
+                        <p></p>
+                        <p>
+                            <span>17 Nov 2016</span>
+                            <span>Vestibulum viverra</span>
+                        </p>
+                        <p></p>
+                        <p>
+                            <span>17 Nov 2016</span>
+                            <span>Vestibulum viverra</span>
+                        </p>
+                    </div>
+                </div>
+                <label for="tab-2" tabindex="0" onclick="onTabChange(2)"></label>
+                <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
+                <h2><span>Mountain2</span></h2>
+                <div class="tab-2">
+                    <div class="tab-content-card">
+                            <h1>Schedule</h1>
+                            <p>
+                                <span>17 Nov 2016</span>
+                                <span>Vestibulum viverra</span>
+                            </p>
+                            <p></p>
+                            <p>
+                                <span>17 Nov 2016</span>
+                                <span>Vestibulum viverra</span>
+                            </p>
+                            <p>
+                                <span>17 Nov 2016</span>
+                                <span>Vestibulum viverra</span>
+                            </p>
+                            <p></p>
+                            <p>
+                                <span>17 Nov 2016</span>
+                                <span>Vestibulum viverra</span>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-background"></div>
+    </div>
+    </section>
+    <!-- END section Climb -->
+    <!-- Footer Section -->
+    <section class="section-footer">
+        <div class="page-container">
+                <div class="footer-logo">
+                    <div>
+                        <img src="./assets/images/logo.png" alt="" />
+                    </div>
+                    <p><span>LOSANGELES</span><br />MOUNTAINS</p>
+                </div>
+                <p class="footer-copyright">Copyright 2016. All rights reserved.</p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
 </html>
